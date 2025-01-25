@@ -2,9 +2,9 @@
 using CQRSMediaTR.API.Services;
 using MediatR;
 
-namespace CQRSMediaTR.API.Data.Handlers
+namespace CQRSMediaTR.API.Data.Handlers.Employees
 {
-    public class UpdateEmployeeHandlers: IRequestHandler<UpdateEmployeeCommand,int>
+    public class UpdateEmployeeHandlers : IRequestHandler<UpdateEmployeeCommand, int>
     {
         private readonly IEmployeeRepository _employeeRepository;
 
@@ -18,10 +18,10 @@ namespace CQRSMediaTR.API.Data.Handlers
             var employee = await _employeeRepository.GetEmployeeByIdAsync(request.Id);
             if (employee == null) { return default; }
             employee.Name = request.Name;
-            employee.Email = request.Email; 
+            employee.Email = request.Email;
             employee.Phone = request.Phone;
-            employee.Address = request.Address; 
-            return await _employeeRepository.UpdateEmployeeAsync(employee); 
+            employee.Address = request.Address;
+            return await _employeeRepository.UpdateEmployeeAsync(employee);
         }
     }
 }

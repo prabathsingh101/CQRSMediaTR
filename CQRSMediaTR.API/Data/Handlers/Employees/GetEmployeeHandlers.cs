@@ -1,10 +1,11 @@
-﻿using CQRSMediaTR.API.Models;
+﻿using CQRSMediaTR.API.Data.Query;
+using CQRSMediaTR.API.Models;
 using CQRSMediaTR.API.Services;
 using MediatR;
 
-namespace CQRSMediaTR.API.Data.Handlers
+namespace CQRSMediaTR.API.Data.Handlers.Employees
 {
-    public class GetEmployeeHandlers: IRequestHandler<GetEmployeeByIdQuery, Employee>
+    public class GetEmployeeHandlers : IRequestHandler<GetEmployeeByIdQuery, Employee>
     {
         private readonly IEmployeeRepository _employeeRepository;
 

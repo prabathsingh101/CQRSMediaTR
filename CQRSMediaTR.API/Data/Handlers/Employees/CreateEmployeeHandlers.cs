@@ -3,9 +3,9 @@ using CQRSMediaTR.API.Models;
 using CQRSMediaTR.API.Services;
 using MediatR;
 
-namespace CQRSMediaTR.API.Data.Handlers
+namespace CQRSMediaTR.API.Data.Handlers.Employees
 {
-    public class CreateEmployeeHandlers: IRequestHandler<CreateEmployeeCommand, Employee>
+    public class CreateEmployeeHandlers : IRequestHandler<CreateEmployeeCommand, Employee>
     {
         private readonly IEmployeeRepository _employeeRepository;
 
@@ -23,7 +23,7 @@ namespace CQRSMediaTR.API.Data.Handlers
                 Phone = request.Phone,
                 Address = request.Address,
             };
-            return await _employeeRepository.AddEmployeeAsync(employee);    
+            return await _employeeRepository.AddEmployeeAsync(employee);
         }
     }
 }

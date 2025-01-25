@@ -1,8 +1,9 @@
-﻿using CQRSMediaTR.API.Models;
+﻿using CQRSMediaTR.API.Data.Query;
+using CQRSMediaTR.API.Models;
 using CQRSMediaTR.API.Services;
 using MediatR;
 
-namespace CQRSMediaTR.API.Data.Handlers
+namespace CQRSMediaTR.API.Data.Handlers.Employees
 {
     public class GetEmployeeListHandlers : IRequestHandler<GetEmployeeListQuery, List<Employee>>
     {

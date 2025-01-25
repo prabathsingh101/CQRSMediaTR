@@ -2,13 +2,13 @@
 using CQRSMediaTR.API.Services;
 using MediatR;
 
-namespace CQRSMediaTR.API.Data.Handlers
+namespace CQRSMediaTR.API.Data.Handlers.Employees
 {
-    public class DeleteEmployeeHandlers: IRequestHandler<DeleteEmployeeCommand , int>
+    public class DeleteEmployeeHandlers : IRequestHandler<DeleteEmployeeCommand, int>
     {
         private readonly IEmployeeRepository _employeeRepository;
 
-        public DeleteEmployeeHandlers( IEmployeeRepository employeeRepository)
+        public DeleteEmployeeHandlers(IEmployeeRepository employeeRepository)
         {
             _employeeRepository = employeeRepository;
         }
