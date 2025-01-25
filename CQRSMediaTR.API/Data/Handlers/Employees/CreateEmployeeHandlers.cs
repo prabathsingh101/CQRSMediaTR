@@ -1,4 +1,4 @@
-﻿using CQRSMediaTR.API.Data.Command;
+﻿using CQRSMediaTR.API.Data.Command.Employees;
 using CQRSMediaTR.API.Models;
 using CQRSMediaTR.API.Services;
 using MediatR;

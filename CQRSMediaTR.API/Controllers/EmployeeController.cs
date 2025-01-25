@@ -1,9 +1,7 @@
-﻿using CQRSMediaTR.API.Data;
-using CQRSMediaTR.API.Data.Command;
-using CQRSMediaTR.API.Data.Query;
+﻿using CQRSMediaTR.API.Data.Command.Employees;
+using CQRSMediaTR.API.Data.Query.Employees;
 using CQRSMediaTR.API.Models;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CQRSMediaTR.API.Controllers

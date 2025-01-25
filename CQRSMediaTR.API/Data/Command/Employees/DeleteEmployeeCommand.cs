@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace CQRSMediaTR.API.Data.Command
+namespace CQRSMediaTR.API.Data.Command.Employees
 {
     public class DeleteEmployeeCommand : IRequest<int>
     {

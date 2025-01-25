@@ -1,14 +1,14 @@
 ﻿using CQRSMediaTR.API.Models;
 using MediatR;
 
-namespace CQRSMediaTR.API.Data.Command
+namespace CQRSMediaTR.API.Data.Command.Products
 {
-    public class CreateProductCommand: IRequest<Product>
+    public class CreateProductCommand : IRequest<Product>
     {
         public CreateProductCommand(string name, string description)
         {
             Name = name;
-            Description = description;          
+            Description = description;
         }
 
         public string Name { get; set; }
