@@ -40,7 +40,8 @@ namespace CQRSMediaTR.API.Controllers
                     Message = _localizationResource.GetString("STATUS_DATA_FOUND").Value ?? "",
                     StatusCode = ErrorStatusCode.STATUS_SUCCESS,
                     IsSuccess = true,
-                    Result = result
+                    Result = result,
+                    Count = result.Count,
                 };
                 return Ok(responseAuthorList);
             }
@@ -51,7 +52,8 @@ namespace CQRSMediaTR.API.Controllers
                     Message = _localizationResource.GetString("STATUS_DATA_FAIL").Value ?? "",
                     StatusCode = ErrorStatusCode.STATUS_BadRequest,
                     IsSuccess = false,
-                    Result = result
+                    Result = result,
+                    Count = result.Count,
                 };
                 return Ok(responseAuthorList);
             }
@@ -72,7 +74,7 @@ namespace CQRSMediaTR.API.Controllers
                     Message = _localizationResource.GetString("STATUS_DATA_FOUND").Value ?? "",
                     StatusCode = ErrorStatusCode.STATUS_SUCCESS,
                     IsSuccess = true,
-                    Result = result
+                    Result = result,
                 };
                 return Ok(responseAuthorList);
             }

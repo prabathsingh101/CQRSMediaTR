@@ -21,10 +21,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-
-
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();  
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+builder.Services.AddScoped<IPublishersRepository, PublisherRepository>();
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
