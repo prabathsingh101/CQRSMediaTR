@@ -24,6 +24,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => {
 
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();  
+builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
 var app = builder.Build();
 
@@ -39,5 +42,13 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+var supportedCultures = new[] { "en-US", "en", "id", };
+var localizationOptions =
+    new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
+    .AddSupportedCultures(supportedCultures)
+    .AddSupportedUICultures(supportedCultures);
+
+app.UseRequestLocalization(localizationOptions);
 
 app.Run();

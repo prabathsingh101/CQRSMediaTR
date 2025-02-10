@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ALPHANUMERICPATTERN" xml:space="preserve">
+    <value>Value should be alphanumeric only</value>
+  </data>
+	<data name="ALPHANUMERIC_OR_SPECIAL_REQUIRED" xml:space="preserve">
+    <value>Value should be alphanumeric and special characters only.</value>
+  </data>
+	<data name="BEDTYPE_REQUIRED" xml:space="preserve">
+    <value>Bed Type is required.</value>
+  </data>
+	<data name="BED_TYPE_CODE_REQUIRED" xml:space="preserve">
+    <value>Bed Type Code is required.</value>
+  </data>
+	<data name="CITY_CODE_REQUIRED" xml:space="preserve">
+    <value>CityCode is required.</value>
+  </data>
+	<data name="CLINICCODE_REQUIRED" xml:space="preserve">
+    <value>Clinic code is required.</value>
+  </data>
+	<data name="CLINIC_NAME_REQUIRED" xml:space="preserve">
+    <value>Clinic name is required.</value>
+  </data>
+	<data name="CODE_REQUIRED" xml:space="preserve">
+    <value>Code is required.</value>
+  </data>
+	<data name="CONTRACT_FROM_REQUIRED" xml:space="preserve">
+    <value>Contract From is required.</value>
+  </data>
+	<data name="CONTRACT_TO_REQUIRED" xml:space="preserve">
+    <value>Contract To is required.</value>
+  </data>
+	<data name="COST_RANG" xml:space="preserve">
+    <value>Estimated Cost From maximum length should be 13</value>
+  </data>
+	<data name="COST_RANG_0_100" xml:space="preserve">
+    <value>Extension maximum length should be 8</value>
+  </data>
+	<data name="COUNTRY_CODE_REQUIRED" xml:space="preserve">
+    <value>Country is required.</value>
+  </data>
+	<data name="DEPARTMENT_REQUIRED" xml:space="preserve">
+    <value>Department is required.</value>
+  </data>
+	<data name="DEPOSIT_REQUIRED" xml:space="preserve">
+    <value>Deposit Collected is required.</value>
+  </data>
+	<data name="DESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>Description is required.</value>
+  </data>
+	<data name="DISPLAY_REQUIRED" xml:space="preserve">
+    <value>Display is required.</value>
+  </data>
+	<data name="DOCTOR_NAME_REQUIRED" xml:space="preserve">
+    <value>Doctor Name is required.</value>
+  </data>
+	<data name="EMAIL_VALIDATION" xml:space="preserve">
+    <value>Email should be valid</value>
+  </data>
+	<data name="ESTIMATE_COST_REQUIRED" xml:space="preserve">
+    <value>Estimated Cost From is required.</value>
+  </data>
+	<data name="ESTIMATE_COST_TO_REQUIRED" xml:space="preserve">
+    <value>Estimated Cost To is required.</value>
+  </data>
+	<data name="EXTENSION_NO_REQUIRED" xml:space="preserve">
+    <value>Extension Number is required.</value>
+  </data>
+	<data name="HOLIDAYDATE_REQUIRED" xml:space="preserve">
+    <value>HolidayDate is required.</value>
+  </data>
+	<data name="HOLIDAYNAME_REQUIRED" xml:space="preserve">
+    <value>HolidayName is required.</value>
+  </data>
+	<data name="HOLIDAYTYPECODE_REQUIRED" xml:space="preserve">
+    <value>HolidayTypeCode is required</value>
+  </data>
+	<data name="ICSTATUS_REQUIRED" xml:space="preserve">
+    <value>Icstatus is required.</value>
+  </data>
+	<data name="IDENTIFICATIONTYPEFIELD_REQUIRED" xml:space="preserve">
+    <value>IdentificationTypeField is required.</value>
+  </data>
+	<data name="IDENTIFICATIONTYPE_REQUIRED" xml:space="preserve">
+    <value>IdentificationTypeFormat is required.</value>
+  </data>
+	<data name="INTEGER_OR_DECIMAL_REQUIRED" xml:space="preserve">
+    <value>Value should be integer or decimal upto two place</value>
+  </data>
+	<data name="JOINT_AT_REQUIRED" xml:space="preserve">
+    <value>Joint At is required</value>
+  </data>
+	<data name="MAX100_LENGTH" xml:space="preserve">
+    <value>Maximum 100 characters.</value>
+  </data>
+	<data name="MAX200_LENGTH" xml:space="preserve">
+    <value>Maximum 200 characters.</value>
+  </data>
+	<data name="MAX20_LENGTH" xml:space="preserve">
+    <value>Maximum 20 characters.</value>
+  </data>
+	<data name="MAX25_LENGTH" xml:space="preserve">
+    <value>maximum length should be 25</value>
+  </data>
+	<data name="MAX300_LENGTH" xml:space="preserve">
+    <value>Maximum 300 characters.</value>
+  </data>
+	<data name="MAX32_LENGTH" xml:space="preserve">
+    <value>maximum length should be 32</value>
+  </data>
+	<data name="MAX50_LENGTH" xml:space="preserve">
+    <value>Maximum 50 characters.</value>
+  </data>
+	<data name="MAX600_LENGTH" xml:space="preserve">
+    <value>Maximum 600 characters.</value>
+  </data>
+	<data name="MAX_BED_LENGTH" xml:space="preserve">
+    <value>Maximum Bed maximum length should be 4</value>
+  </data>
+	<data name="MAX_BED_REQUIRED" xml:space="preserve">
+    <value>Maximum Bed is required.</value>
+  </data>
+	<data name="NUMBERONLY" xml:space="preserve">
+    <value>Extension should be numeric</value>
+  </data>
+	<data name="FAXPATTERN" xml:space="preserve">
+    <value>Enter a valid fax number</value>
+  </data>
+	<data name="NUMBERONLY_MAXBED" xml:space="preserve">
+    <value>Maximum Bed should be numeric</value>
+  </data>
+	<data name="PARENT_COMPANY_REQUIRED" xml:space="preserve">
+    <value>Parent Company Name is required.</value>
+  </data>
+	<data name="PHONENUMBER1_REQUIRED" xml:space="preserve">
+    <value>PhoneNumber1 is required.</value>
+  </data>
+	<data name="PHONENUMBERCODE1_REQUIRED" xml:space="preserve">
+    <value>PhoneNumber1Code is required.</value>
+  </data>
+	<data name="POST_CODE_REQUIRED" xml:space="preserve">
+    <value>PostCode is required.</value>
+  </data>
+	<data name="PRIVILEGE_CODE_REQUIRED" xml:space="preserve">
+    <value>Privilege Code is required.</value>
+  </data>
+	<data name="ROOM_CODE_REQUIRED" xml:space="preserve">
+    <value>Room Code is required.</value>
+  </data>
+	<data name="ROOM_DESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>Room Description is required.</value>
+  </data>
+	<data name="ROOM_REQUIRED" xml:space="preserve">
+    <value>Room is required.</value>
+  </data>
+	<data name="STARTDATE_REQUIRED" xml:space="preserve">
+    <value>StartDate is required.</value>
+  </data>
+	<data name="STATE_CODE_REQUIRED" xml:space="preserve">
+    <value>StateCode is required.</value>
+  </data>
+	<data name="STATUS_ALREADY_ACTIVATED" xml:space="preserve">
+    <value>Device Already Activated</value>
+  </data>
+	<data name="STATUS_ALREADY_REGISTERED" xml:space="preserve">
+    <value>Device Already Registered</value>
+  </data>
+	<data name="STATUS_BUSINESSREGNO_REQUIRED" xml:space="preserve">
+    <value>Business Reg No. is required</value>
+  </data>
+	<data name="STATUS_CITY_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>City Code doesn't exist</value>
+  </data>
+	<data name="STATUS_CODE_EXIST" xml:space="preserve">
+    <value>Code already exist</value>
+  </data>
+	<data name="STATUS_CODE_EXISTS" xml:space="preserve">
+    <value>Code already exist</value>
+  </data>
+	<data name="STATUS_CODE_NOT_EXIST" xml:space="preserve">
+    <value>Code doesn't exist</value>
+  </data>
+	<data name="STATUS_COMPANYNAMEVN_REQUIRED" xml:space="preserve">
+    <value>Company Name(VN) is required</value>
+  </data>
+	<data name="STATUS_COMPANY_NAME_EXISTS" xml:space="preserve">
+    <value>Company Name already exist</value>
+  </data>
+	<data name="STATUS_COUNTRY_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>Country Code doesn't exist</value>
+  </data>
+	<data name="STATUS_DATA_ADDED" xml:space="preserve">
+    <value>Record Added Successfully</value>
+  </data>
+	<data name="STATUS_DATA_ADD_FAIL" xml:space="preserve">
+    <value>Record Not Added</value>
+  </data>
+	<data name="STATUS_DATA_CLEARED" xml:space="preserve">
+    <value>Data Cleared Successfully.</value>
+  </data>
+	<data name="STATUS_DATA_DELETED" xml:space="preserve">
+    <value>Record Deleted Successfully</value>
+  </data>
+	<data name="STATUS_DATA_SEEDED" xml:space="preserve">
+    <value>Data Seeded Successfully.</value>
+  </data>
+	<data name="STATUS_DATA_DELETE_FAIL" xml:space="preserve">
+    <value>Record Not Deleted</value>
+  </data>
+	<data name="STATUS_DATA_FAIL" xml:space="preserve">
+    <value>Record Not Found</value>
+  </data>
+	<data name="STATUS_DATA_FOUND" xml:space="preserve">
+    <value>Record Found</value>
+  </data>
+	<data name="STATUS_DATA_UPDATED" xml:space="preserve">
+    <value>Record Updated Successfully</value>
+  </data>
+	<data name="STATUS_DATA_UPDATE_FAIL" xml:space="preserve">
+    <value>Record Not Updated</value>
+  </data>
+	<data name="STATUS_DEBTOR_CATEGORY_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>Debtor Category Code doesn't exist,</value>
+  </data>
+	<data name="STATUS_DEPARTMENTOFHEALTHVN_REQUIRED" xml:space="preserve">
+    <value>Department Of Health(VN) is required</value>
+  </data>
+	<data name="STATUS_DEPARTMENTOFHEALTH_REQUIRED" xml:space="preserve">
+    <value>Department Of Health is required</value>
+  </data>
+	<data name="STATUS_DESCRIPTIONVN_REQUIRED" xml:space="preserve">
+    <value>DescriptionVN is required</value>
+  </data>
+	<data name="STATUS_DESCRIPTION_EXIST" xml:space="preserve">
+    <value>Description already exist</value>
+  </data>
+	<data name="STATUS_DESCRIPTION_EXISTS" xml:space="preserve">
+    <value>Description already exist</value>
+  </data>
+	<data name="STATUS_FAILED" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+	<data name="STATUS_HOSPITALS_NOT_FOUND" xml:space="preserve">
+    <value>No Hospital Found</value>
+  </data>
+	<data name="STATUS_INPROGRESS" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+	<data name="STATUS_INVALID_REGIONCODE" xml:space="preserve">
+    <value>Invalid Region Code</value>
+  </data>
+	<data name="STATUS_INVALID_REQUEST" xml:space="preserve">
+    <value>Invalid Request Parameter</value>
+  </data>
+	<data name="STATUS_INVALID_ROOM_ID" xml:space="preserve">
+    <value>Invalid Room Id</value>
+  </data>
+	<data name="STATUS_INVALID_SESSION" xml:space="preserve">
+    <value>Invalid Session</value>
+  </data>
+	<data name="STATUS_INVALID_SESSION_ID" xml:space="preserve">
+    <value>Your App Session Expired. Please Exit App And Login Once Again.</value>
+  </data>
+	<data name="STATUS_INVALID_TOKEN" xml:space="preserve">
+    <value>Invalid Token</value>
+  </data>
+	<data name="STATUS_INVALIED_TOKEN" xml:space="preserve">
+    <value>Invalid Token</value>
+  </data>
+	<data name="STATUS_ISDELETED_TRUE" xml:space="preserve">
+    <value>Record not saved as IsDeleted is true</value>
+  </data>
+	<data name="STATUS_ISOBSOLETE_TRUE" xml:space="preserve">
+    <value>Record not saved as IsObsolete is true</value>
+  </data>
+	<data name="STATUS_MESSAGE_SENDING_ERROR" xml:space="preserve">
+    <value>Message Sending Error</value>
+  </data>
+	<data name="STATUS_NODEVICE_FOUND" xml:space="preserve">
+    <value>No Device Found</value>
+  </data>
+	<data name="STATUS_PostCode_Required" xml:space="preserve">
+    <value>Post Code is required</value>
+  </data>
+	<data name="STATUS_PROVIDE_VALID_TOKEN" xml:space="preserve">
+    <value>Please provide valid token</value>
+  </data>
+	<data name="STATUS_REDISCACHE_UPDATED" xml:space="preserve">
+    <value>Redis Cache Updated Successfully</value>
+  </data>
+	<data name="STATUS_REFERENCE_DATA" xml:space="preserve">
+    <value>Error:</value>
+  </data>
+	<data name="STATUS_REGIONCODE_REQUIRED" xml:space="preserve">
+    <value>Region code is required</value>
+  </data>
+	<data name="STATUS_REGISTRATION_FAILED" xml:space="preserve">
+    <value>Registration Failed</value>
+  </data>
+	<data name="STATUS_SERVER_ERROR" xml:space="preserve">
+    <value>Internal Server Error, Please Try Later.</value>
+  </data>
+	<data name="STATUS_SMRPCODE_EXIST" xml:space="preserve">
+    <value>SMRP Code already exist</value>
+  </data>
+	<data name="STATUS_SMRPCODE_REQUIRED" xml:space="preserve">
+    <value>SMRP Code is required</value>
+  </data>
+	<data name="STATUS_SMRPDESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>SMRP Description is required</value>
+  </data>
+	<data name="STATUS_SMRPFACILITYCODE_REQUIRED" xml:space="preserve">
+    <value>SMRP Facility Code is required</value>
+  </data>
+	<data name="STATUS_STATE_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>State Code doesn't exist</value>
+  </data>
+	<data name="STATUS_SUCCESS" xml:space="preserve">
+    <value>Success</value>
+  </data>
+	<data name="STATUS_UNAUTHORIZED_ACCESS" xml:space="preserve">
+    <value>Unauthorized Access</value>
+  </data>
+	<data name="STATUS_UNAUTHORIZED_USER" xml:space="preserve">
+    <value>User doesn't have access or permission</value>
+  </data>
+	<data name="STREET1_REQUIRED" xml:space="preserve">
+    <value>Street4 is required.</value>
+  </data>
+	<data name="VALIDEXPIRYDATE_REQUIRED" xml:space="preserve">
+    <value>ValidateExpiryDate is required.</value>
+  </data>
+	<data name="WARDID_REQUIRED" xml:space="preserve">
+    <value>Ward is required.</value>
+  </data>
+	<data name="WARD_CODE_REQUIRED" xml:space="preserve">
+    <value>Ward Code is required.</value>
+  </data>
+	<data name="WARD_DESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>Ward Description is required.</value>
+  </data>
+	<data name="STATUS_XSS_DETECTED" xml:space="preserve">
+    <value>XSS detected!</value>
+  </data>
+	<data name="STATUS_CODE_DESCRIPTION_EXIST" xml:space="preserve">
+    <value>Code and Description already exist.</value>
+  </data>
+	<data name="SPECIAL_CHARACTER_NOT_ALLOW_MESSAGE" xml:space="preserve">
+    <value>Space and Special Character not allowed</value>
+  </data>
+	<data name="STATUS_DUPLICATE_RECORD" xml:space="preserve">
+    <value>Duplicate record cannot be added</value>
+  </data>
+	<data name="MESSAGETYPE_ERROR" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+	<data name="MESSAGETYPE_INFO" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+	<data name="MESSAGETYPE_SUCCESS" xml:space="preserve">
+    <value>SUCCESS</value>
+  </data>
+	<data name="MESSAGETYPE_VALIDATION" xml:space="preserve">
+    <value>VALIDATION</value>
+  </data>
+	<data name="MESSAGETYPE_WARNING" xml:space="preserve">
+    <value>WARNING</value>
+  </data>
+	<data name="RECORD_ADDED_SUCESSFULLY" xml:space="preserve">
+    <value>Record Added Successfully</value>
+  </data>
+	<data name="RECORD_UPDATED_SUCESSFULLY" xml:space="preserve">
+    <value>Record Updated Successfully</value>
+  </data>
+	<data name="MESSAGE_DATA_FOUND" xml:space="preserve">
+    <value>Record found</value>
+  </data>
+	<data name="MESSAGE_DATA_NOT_FOUND" xml:space="preserve">
+    <value>Record not found</value>
+  </data>
+	<data name="VNDESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>VietnameseDescription is required.</value>
+  </data>
+	<data name="STATUS_DISPLAY_EXIST" xml:space="preserve">
+    <value>Display already exist</value>
+  </data>
+	<data name="SPACE_VALIDATION" xml:space="preserve">
+    <value>Space is not allowed.</value>
+  </data>
+	<data name="MAX10_LENGTH" xml:space="preserve">
+    <value>Maximum 10 characters.</value>
+  </data>
+</root>

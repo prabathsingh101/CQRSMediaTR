@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ALPHANUMERICPATTERN" xml:space="preserve">
+    <value>Nilai harus berupa alfanumerik saja</value>
+  </data>
+	<data name="ALPHANUMERIC_OR_SPECIAL_REQUIRED" xml:space="preserve">
+    <value>Nilai harus alfanumerik dan karakter khusus saja.</value>
+  </data>
+	<data name="BEDTYPE_REQUIRED" xml:space="preserve">
+    <value>Jenis Tempat Tidur diperlukan.</value>
+  </data>
+	<data name="BED_TYPE_CODE_REQUIRED" xml:space="preserve">
+    <value>Kode Tipe Tempat Tidur diperlukan.</value>
+  </data>
+	<data name="CITY_CODE_REQUIRED" xml:space="preserve">
+    <value>Kode Kota diperlukan.</value>
+  </data>
+	<data name="CLINICCODE_REQUIRED" xml:space="preserve">
+    <value>Kode klinik diperlukan.</value>
+  </data>
+	<data name="CLINIC_NAME_REQUIRED" xml:space="preserve">
+    <value>Nama klinik wajib diisi.</value>
+  </data>
+	<data name="CODE_REQUIRED" xml:space="preserve">
+    <value>Kode diperlukan.</value>
+  </data>
+	<data name="CONTRACT_FROM_REQUIRED" xml:space="preserve">
+    <value>Kontrak Dari diperlukan.</value>
+  </data>
+	<data name="CONTRACT_TO_REQUIRED" xml:space="preserve">
+    <value>Kontrak Untuk diperlukan</value>
+  </data>
+	<data name="COST_RANG" xml:space="preserve">
+    <value>Perkiraan Biaya Dari panjang maksimum harus 13</value>
+  </data>
+	<data name="COST_RANG_0_100" xml:space="preserve">
+    <value>Panjang maksimum ekstensi harus 8</value>
+  </data>
+	<data name="COUNTRY_CODE_REQUIRED" xml:space="preserve">
+    <value>Negara diperlukan.</value>
+  </data>
+	<data name="DEPARTMENT_REQUIRED" xml:space="preserve">
+    <value>Departemen diperlukan.</value>
+  </data>
+	<data name="DEPOSIT_REQUIRED" xml:space="preserve">
+    <value>Deposit Dikumpulkan diperlukan.</value>
+  </data>
+	<data name="DESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>Deskripsi diperlukan.</value>
+  </data>
+	<data name="DISPLAY_REQUIRED" xml:space="preserve">
+    <value>Layar diperlukan.</value>
+  </data>
+	<data name="DOCTOR_NAME_REQUIRED" xml:space="preserve">
+    <value>Nama Dokter diperlukan.</value>
+  </data>
+	<data name="EMAIL_VALIDATION" xml:space="preserve">
+    <value>Email harus valid</value>
+  </data>
+	<data name="ESTIMATE_COST_REQUIRED" xml:space="preserve">
+    <value>Perkiraan Biaya Dari diperlukan.</value>
+  </data>
+	<data name="ESTIMATE_COST_TO_REQUIRED" xml:space="preserve">
+    <value>Estimasi Biaya Untuk diperlukan.</value>
+  </data>
+	<data name="EXTENSION_NO_REQUIRED" xml:space="preserve">
+    <value>Perlu Nomor Ekstensi.</value>
+  </data>
+	<data name="FAXPATTERN" xml:space="preserve">
+    <value>Masukkan Nomor Faks yang Valid</value>
+  </data>
+	<data name="HOLIDAYDATE_REQUIRED" xml:space="preserve">
+    <value>Tanggal Liburan diperlukan.</value>
+  </data>
+	<data name="HOLIDAYNAME_REQUIRED" xml:space="preserve">
+    <value>HolidayName diperlukan.</value>
+  </data>
+	<data name="HOLIDAYTYPECODE_REQUIRED" xml:space="preserve">
+    <value>HolidayTypeCode diperlukan</value>
+  </data>
+	<data name="ICSTATUS_REQUIRED" xml:space="preserve">
+    <value>Status diperlukan.</value>
+  </data>
+	<data name="IDENTIFICATIONTYPEFIELD_REQUIRED" xml:space="preserve">
+    <value>Bidang Jenis Identifikasi wajib diisi.</value>
+  </data>
+	<data name="IDENTIFICATIONTYPE_REQUIRED" xml:space="preserve">
+    <value>IdentificationTypeFormat diperlukan.</value>
+  </data>
+	<data name="INTEGER_OR_DECIMAL_REQUIRED" xml:space="preserve">
+    <value>Nilai harus bilangan bulat atau desimal hingga dua tempat</value>
+  </data>
+	<data name="JOINT_AT_REQUIRED" xml:space="preserve">
+    <value>Bersama Di diperlukan.</value>
+  </data>
+	<data name="MAX100_LENGTH" xml:space="preserve">
+    <value>Maksimal 100 karakter.</value>
+  </data>
+	<data name="MAX200_LENGTH" xml:space="preserve">
+    <value>Maksimum 200 karakter.</value>
+  </data>
+	<data name="MAX20_LENGTH" xml:space="preserve">
+    <value>Maksimum 20 karakter.</value>
+  </data>
+	<data name="MAX25_LENGTH" xml:space="preserve">
+    <value>panjang maksimum harus 25</value>
+  </data>
+	<data name="MAX300_LENGTH" xml:space="preserve">
+    <value>Maksimum 300 karakter.</value>
+  </data>
+	<data name="MAX32_LENGTH" xml:space="preserve">
+    <value>panjang maksimum harus 32</value>
+  </data>
+	<data name="MAX50_LENGTH" xml:space="preserve">
+    <value>Maksimum 50 karakter.</value>
+  </data>
+	<data name="MAX600_LENGTH" xml:space="preserve">
+    <value>Maksimum 600 karakter.</value>
+  </data>
+	<data name="MAX_BED_LENGTH" xml:space="preserve">
+    <value>Maksimum Tempat tidur panjang maksimum harus 4</value>
+  </data>
+	<data name="MAX_BED_REQUIRED" xml:space="preserve">
+    <value>Tempat Tidur Maksimum diperlukan.</value>
+  </data>
+	<data name="NUMBERONLY" xml:space="preserve">
+    <value>Ekstensi harus numerik</value>
+  </data>
+	<data name="NUMBERONLY_MAXBED" xml:space="preserve">
+    <value>Ranjang Maksimum harus numerik</value>
+  </data>
+	<data name="PARENT_COMPANY_REQUIRED" xml:space="preserve">
+    <value>Nama Perusahaan Induk wajib diisi.</value>
+  </data>
+	<data name="PHONENUMBER1_REQUIRED" xml:space="preserve">
+    <value>PhoneNumber1 diperlukan.</value>
+  </data>
+	<data name="PHONENUMBERCODE1_REQUIRED" xml:space="preserve">
+    <value>PhoneNumber1Code diperlukan.</value>
+  </data>
+	<data name="POST_CODE_REQUIRED" xml:space="preserve">
+    <value>Kodepos diperlukan.</value>
+  </data>
+	<data name="PRIVILEGE_CODE_REQUIRED" xml:space="preserve">
+    <value>Kode Hak Istimewa diperlukan.</value>
+  </data>
+	<data name="ROOM_CODE_REQUIRED" xml:space="preserve">
+    <value>Kode Kamar diperlukan.</value>
+  </data>
+	<data name="ROOM_DESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>Deskripsi Kamar diperlukan.</value>
+  </data>
+	<data name="ROOM_REQUIRED" xml:space="preserve">
+    <value>Kamar diperlukan.</value>
+  </data>
+	<data name="STARTDATE_REQUIRED" xml:space="preserve">
+    <value>TanggalMulai diperlukan.</value>
+  </data>
+	<data name="STATE_CODE_REQUIRED" xml:space="preserve">
+    <value>Kode Negara diperlukan.</value>
+  </data>
+	<data name="STATUS_ALREADY_ACTIVATED" xml:space="preserve">
+    <value>Perangkat Sudah Diaktifkan</value>
+  </data>
+	<data name="STATUS_ALREADY_REGISTERED" xml:space="preserve">
+    <value>Perangkat Sudah Terdaftar</value>
+  </data>
+	<data name="STATUS_BUSINESSREGNO_REQUIRED" xml:space="preserve">
+    <value>Nomor Pendaftaran Bisnis diperlukan.</value>
+  </data>
+	<data name="STATUS_CITY_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>Kode Kota tidak ada</value>
+  </data>
+	<data name="STATUS_CODE_DESCRIPTION_EXIST" xml:space="preserve">
+    <value>Kode dan Deskripsi sudah ada.</value>
+  </data>
+	<data name="STATUS_CODE_EXIST" xml:space="preserve">
+    <value>Kode sudah ada</value>
+  </data>
+	<data name="STATUS_CODE_EXISTS" xml:space="preserve">
+    <value>Kode sudah ada</value>
+  </data>
+	<data name="STATUS_CODE_NOT_EXIST" xml:space="preserve">
+    <value>Kode tidak ada</value>
+  </data>
+	<data name="STATUS_COMPANYNAMEVN_REQUIRED" xml:space="preserve">
+    <value>Nama Perusahaan (VN) diperlukan</value>
+  </data>
+	<data name="STATUS_COMPANY_NAME_EXISTS" xml:space="preserve">
+    <value>Nama Perusahaan sudah ada</value>
+  </data>
+	<data name="STATUS_COUNTRY_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>Deskripsi sudah ada</value>
+  </data>
+	<data name="STATUS_DATA_ADDED" xml:space="preserve">
+    <value>Rekaman Berhasil Ditambahkan</value>
+  </data>
+	<data name="STATUS_DATA_ADD_FAIL" xml:space="preserve">
+    <value>Rekam Tidak Ditambahkan</value>
+  </data>
+  <data name="STATUS_DATA_CLEARED" xml:space="preserve">
+    <value>DATA STATUS DIHAPUS.</value>
+  </data>
+  <data name="STATUS_DATA_SEEDED" xml:space="preserve">
+    <value>DATA STATUS DIBENIKAN.</value>
+  </data>
+	<data name="STATUS_DATA_DELETED" xml:space="preserve">
+    <value>Rekaman Berhasil Dihapus</value>
+  </data>
+	<data name="STATUS_DATA_DELETE_FAIL" xml:space="preserve">
+    <value>Rekam Tidak Dihapus</value>
+  </data>
+	<data name="STATUS_DATA_FAIL" xml:space="preserve">
+    <value>Rekaman tidak ditemukan</value>
+  </data>
+	<data name="STATUS_DATA_FOUND" xml:space="preserve">
+    <value>Rekaman Ditemukan</value>
+  </data>
+	<data name="STATUS_DATA_UPDATED" xml:space="preserve">
+    <value>Rekaman Berhasil Diperbarui</value>
+  </data>
+	<data name="STATUS_DATA_UPDATE_FAIL" xml:space="preserve">
+    <value>Rekam Tidak Diperbarui</value>
+  </data>
+	<data name="STATUS_DEBTOR_CATEGORY_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>Kode Kategori Debitur tidak ada,</value>
+  </data>
+	<data name="STATUS_DEPARTMENTOFHEALTHVN_REQUIRED" xml:space="preserve">
+    <value>Departemen Kesehatan (VN) diperlukan</value>
+  </data>
+	<data name="STATUS_DEPARTMENTOFHEALTH_REQUIRED" xml:space="preserve">
+    <value>Departemen Kesehatan diperlukan</value>
+  </data>
+	<data name="STATUS_DESCRIPTIONVN_REQUIRED" xml:space="preserve">
+    <value>DeskripsiVN diperlukan</value>
+  </data>
+	<data name="STATUS_DESCRIPTION_EXIST" xml:space="preserve">
+    <value>Deskripsi sudah ada</value>
+  </data>
+	<data name="STATUS_DESCRIPTION_EXISTS" xml:space="preserve">
+    <value>Description already exist</value>
+  </data>
+	<data name="STATUS_FAILED" xml:space="preserve">
+    <value>Gagal</value>
+  </data>
+	<data name="STATUS_HOSPITALS_NOT_FOUND" xml:space="preserve">
+    <value>Rumah Sakit Tidak Ditemukan</value>
+  </data>
+	<data name="STATUS_INPROGRESS" xml:space="preserve">
+    <value>Sedang berlangsung</value>
+  </data>
+	<data name="STATUS_INVALID_REGIONCODE" xml:space="preserve">
+    <value>Kode Wilayah Tidak Valid</value>
+  </data>
+	<data name="STATUS_INVALID_REQUEST" xml:space="preserve">
+    <value>Parameter Permintaan Tidak Valid</value>
+  </data>
+	<data name="STATUS_INVALID_ROOM_ID" xml:space="preserve">
+    <value>Id Kamar Tidak Valid</value>
+  </data>
+	<data name="STATUS_INVALID_SESSION" xml:space="preserve">
+    <value>Sesi Tidak Valid</value>
+  </data>
+	<data name="STATUS_INVALID_SESSION_ID" xml:space="preserve">
+    <value>Sesi Aplikasi Anda Berakhir. Silakan Keluar dari Aplikasi Dan Masuk Sekali Lagi.</value>
+  </data>
+	<data name="STATUS_INVALID_TOKEN" xml:space="preserve">
+    <value>Token Tidak Valid</value>
+  </data>
+	<data name="STATUS_INVALIED_TOKEN" xml:space="preserve">
+    <value>Token Tidak Valid</value>
+  </data>
+	<data name="STATUS_ISDELETED_TRUE" xml:space="preserve">
+    <value>Rekam tidak disimpan karena IsDeleted benar</value>
+  </data>
+	<data name="STATUS_ISOBSOLETE_TRUE" xml:space="preserve">
+    <value>Rekam tidak disimpan karena IsObsolete benar</value>
+  </data>
+	<data name="STATUS_MESSAGE_SENDING_ERROR" xml:space="preserve">
+    <value>Kesalahan Pengiriman Pesan</value>
+  </data>
+	<data name="STATUS_NODEVICE_FOUND" xml:space="preserve">
+    <value>Tidak Ada Perangkat Ditemukan</value>
+  </data>
+	<data name="STATUS_PostCode_Required" xml:space="preserve">
+    <value>Kode Pos diperlukan</value>
+  </data>
+	<data name="STATUS_PROVIDE_VALID_TOKEN" xml:space="preserve">
+    <value>Berikan token yang valid</value>
+  </data>
+	<data name="STATUS_REDISCACHE_UPDATED" xml:space="preserve">
+    <value>Redis Cache Berhasil Diperbarui</value>
+  </data>
+	<data name="STATUS_REFERENCE_DATA" xml:space="preserve">
+    <value>Kesalahan:</value>
+  </data>
+	<data name="STATUS_REGIONCODE_REQUIRED" xml:space="preserve">
+    <value>Kode wilayah diperlukan</value>
+  </data>
+	<data name="STATUS_REGISTRATION_FAILED" xml:space="preserve">
+    <value>Registrasi gagal</value>
+  </data>
+	<data name="STATUS_SERVER_ERROR" xml:space="preserve">
+    <value>Kesalahan Server Internal, Silakan Coba Nanti.</value>
+  </data>
+	<data name="STATUS_SMRPCODE_EXIST" xml:space="preserve">
+    <value>Kode SMRP sudah ada</value>
+  </data>
+	<data name="STATUS_SMRPCODE_REQUIRED" xml:space="preserve">
+    <value>Kode SMRP diperlukan</value>
+  </data>
+	<data name="STATUS_SMRPDESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>Deskripsi SMRP diperlukan</value>
+  </data>
+	<data name="STATUS_SMRPFACILITYCODE_REQUIRED" xml:space="preserve">
+    <value>Kode Fasilitas SMRP diperlukan</value>
+  </data>
+	<data name="STATUS_STATE_CODE_DOESNT_EXIST" xml:space="preserve">
+    <value>Kode Negara tidak ada</value>
+  </data>
+	<data name="STATUS_SUCCESS" xml:space="preserve">
+    <value>Kesuksesan</value>
+  </data>
+	<data name="STATUS_UNAUTHORIZED_ACCESS" xml:space="preserve">
+    <value>Akses tidak sah</value>
+  </data>
+	<data name="STATUS_UNAUTHORIZED_USER" xml:space="preserve">
+    <value>Pengguna tidak memiliki akses atau izin</value>
+  </data>
+	<data name="STATUS_XSS_DETECTED" xml:space="preserve">
+    <value>XSS dikesan!</value>
+  </data>
+	<data name="STREET1_REQUIRED" xml:space="preserve">
+    <value>Jalan1 diperlukan.</value>
+  </data>
+	<data name="VALIDEXPIRYDATE_REQUIRED" xml:space="preserve">
+    <value>ValidateExpiryDate diperlukan.</value>
+  </data>
+	<data name="WARDID_REQUIRED" xml:space="preserve">
+    <value>Ward diperlukan.</value>
+  </data>
+	<data name="WARD_CODE_REQUIRED" xml:space="preserve">
+    <value>Kode Lingkungan diperlukan.</value>
+  </data>
+	<data name="WARD_DESCRIPTION_REQUIRED" xml:space="preserve">
+    <value>Deskripsi Lingkungan diperlukan.</value>
+  </data>
+</root>

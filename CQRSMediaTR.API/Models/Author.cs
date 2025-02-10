@@ -13,7 +13,7 @@ namespace CQRSMediaTR.API.Models
         public string LastName { get; set; } = string.Empty;
         public DateTime? CreatedDate { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedDate { get; set; }
-        public int? CreatedBy { get; set; }
+        public int CreatedBy { get; set; }
         public int? UpdatedBy { get; set; }
     }
 }
