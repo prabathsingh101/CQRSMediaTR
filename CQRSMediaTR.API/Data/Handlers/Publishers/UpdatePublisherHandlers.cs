@@ -15,7 +15,7 @@ namespace CQRSMediaTR.API.Data.Handlers.Publishers
         }
         public async Task<int> Handle(UpdatePublisherCommand request, CancellationToken cancellationToken)
         {
-            Publisher author = new Publisher()
+            Publisher publisher = new Publisher()
             {
                 PublisherID = request.PublisherID,
                 Name = request.Name,
@@ -25,7 +25,7 @@ namespace CQRSMediaTR.API.Data.Handlers.Publishers
                 UpdatedBy = 3,
                 UpdatedDate = DateTime.UtcNow,
             };
-            return await _publishers.UpdatePublisherAsync(author);
+            return await _publishers.UpdatePublisherAsync(publisher);
         }
     }
 }

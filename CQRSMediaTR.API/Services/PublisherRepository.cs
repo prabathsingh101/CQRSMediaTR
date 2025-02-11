@@ -13,7 +13,8 @@ namespace CQRSMediaTR.API.Services
             _context = context;
         }
         public async Task<Publisher> AddPublisherAsync(Publisher publisher)
-        {
+        {       
+
             var result = await _context.Publishers.AddAsync(publisher);
             await _context.SaveChangesAsync();
             return result.Entity;

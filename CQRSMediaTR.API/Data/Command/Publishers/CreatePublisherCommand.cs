@@ -13,10 +13,10 @@ namespace CQRSMediaTR.API.Data.Command.Publishers
             this.Email = email;
             this.CreatedBy = createdby; 
         }
-        public string? Name { get; set; }
-        public string? Address { get; set; }
-        public string? Phone { get; set; }
-        public string? Email { get; set; }
-        public int? CreatedBy { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public int CreatedBy { get; set; }
     }
 }

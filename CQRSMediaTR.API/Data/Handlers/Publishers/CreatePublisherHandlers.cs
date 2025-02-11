@@ -15,7 +15,7 @@ namespace CQRSMediaTR.API.Data.Handlers.Publishers
         }
         public async Task<Publisher> Handle(CreatePublisherCommand request, CancellationToken cancellationToken)
         {
-            Publisher author = new Publisher()
+            Publisher publisher = new Publisher()
             {
                 Name = request.Name,
                 Address = request.Address,
@@ -23,7 +23,7 @@ namespace CQRSMediaTR.API.Data.Handlers.Publishers
                 Email = request.Email,
                 CreatedBy = 3,
             };
-            return await _publishers.AddPublisherAsync(author);
+            return await _publishers.AddPublisherAsync(publisher);
         }
     }
 }

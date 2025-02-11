@@ -18,8 +18,8 @@ namespace CQRSMediaTR.API.Data.Command.Publishers
             this.Address = address;
             this.Phone = phone;
             this.Email = email;
-            this.UpdatedDate = updateddate;
             this.UpdatedBy = updatedby;
+            this.UpdatedDate = updateddate;            
         }
         public int PublisherID { get; set; }
         public string? Name { get; set; }
