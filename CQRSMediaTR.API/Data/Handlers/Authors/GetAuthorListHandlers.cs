@@ -13,7 +13,8 @@ namespace CQRSMediaTR.API.Data.Handlers.Authors
         {
             _repository = repository;
         }
-        public async Task<List<Author>> Handle(GetAuthorListQuery request, CancellationToken cancellationToken)
+        public async Task<List<Author>> Handle(GetAuthorListQuery request, 
+            CancellationToken cancellationToken)
         {
             var isExists = _repository.GetAuthorListAsync();
             if (isExists == null) { return default; }

@@ -4,7 +4,8 @@ namespace CQRSMediaTR.API.Data.Command.Authors
 {
     public class UpdateAuthorCommand : IRequest<int>
     {
-        public UpdateAuthorCommand(int authorid, string firstname, string lastname, DateTime? updatedDate, int? updatedBy)
+        public UpdateAuthorCommand(int authorid, string firstname, string lastname, 
+            DateTime? updatedDate, int? updatedBy)
         {
             this.AuthorId = authorid;
             this.FirstName = firstname;

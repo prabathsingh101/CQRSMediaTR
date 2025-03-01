@@ -99,10 +99,10 @@ namespace CQRSMediaTR.API.Controllers
 
             GenericResponse<string> dataResponse = new() { IsSuccess = true };
 
-            var authorReturn = await _mediator.Send(
+            var result = await _mediator.Send(
                 new CreateAuthorCommand(author.FirstName, author.LastName, author.CreatedBy));
 
-            if (authorReturn is not null)
+            if (result is not null)
             {
                 dataResponse.StatusCode = ErrorStatusCode.STATUS_SUCCESS;
                 dataResponse.Message = _localizationResource.GetString("RECORD_ADDED_SUCESSFULLY").Value;
