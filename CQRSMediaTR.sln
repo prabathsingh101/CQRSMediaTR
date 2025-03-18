@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSMediaTR.API", "CQRSMediaTR.API\CQRSMediaTR.API.csproj", "{C9965E5B-3282-4E54-8DFE-085BC1C3B029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSMediaTR.API", "CQRSMediaTR.API\CQRSMediaTR.API.csproj", "{C9965E5B-3282-4E54-8DFE-085BC1C3B029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSMediaTR.APIUnitTest", "CQRSMediaTR.APIUnitTest\CQRSMediaTR.APIUnitTest.csproj", "{A6C9196F-D16B-4FE7-A1F8-D6548CE47D5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C9965E5B-3282-4E54-8DFE-085BC1C3B029}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9965E5B-3282-4E54-8DFE-085BC1C3B029}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9965E5B-3282-4E54-8DFE-085BC1C3B029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C9196F-D16B-4FE7-A1F8-D6548CE47D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C9196F-D16B-4FE7-A1F8-D6548CE47D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C9196F-D16B-4FE7-A1F8-D6548CE47D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C9196F-D16B-4FE7-A1F8-D6548CE47D5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

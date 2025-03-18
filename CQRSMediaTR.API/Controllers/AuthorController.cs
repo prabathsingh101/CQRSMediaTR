@@ -18,7 +18,9 @@ namespace CQRSMediaTR.API.Controllers
 
         public AuthorController(
             ILogger<AuthorController> logger,
-            IStringLocalizer<SharedResource> localizationResource, IMediator mediator)
+            IStringLocalizer<SharedResource> localizationResource, 
+            IMediator mediator
+            )
         {
             _logger = logger;
             _localizationResource = localizationResource;
