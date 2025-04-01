@@ -95,7 +95,7 @@ namespace CQRSMediaTR.API.Controllers
 
         [HttpPost]
         [Route("POST")]
-        public async Task<IActionResult> AddAuthor(Author author)
+        public async Task<IActionResult> AddAuthor([FromBody] Author author)
         {
             _logger.LogInformation("AuthorMaster: CreateAuthor Started.");
 
@@ -121,7 +121,7 @@ namespace CQRSMediaTR.API.Controllers
 
         [HttpPut]
         [Route("PUT")]
-        public async Task<IActionResult> UpdateAuthor(Author author)
+        public async Task<IActionResult> UpdateAuthor([FromBody] Author author)
         {
             _logger.LogInformation("AuthorMaster: UpdateAuthor Started.");
 
