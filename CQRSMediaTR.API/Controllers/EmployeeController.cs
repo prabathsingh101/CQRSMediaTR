@@ -3,6 +3,7 @@ using CQRSMediaTR.API.Data.Query.Employees;
 using CQRSMediaTR.API.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Mime;
 
 namespace CQRSMediaTR.API.Controllers
 {
@@ -19,6 +20,7 @@ namespace CQRSMediaTR.API.Controllers
 
         [HttpGet]
         [Route("AllEmployee")]
+        [Produces(MediaTypeNames.Application.Json, MediaTypeNames.Application.Xml)]
         public async Task<List<Employee>> GetAllEmployee()
         {
             var employeeList = await _mediator.Send(new GetEmployeeListQuery());

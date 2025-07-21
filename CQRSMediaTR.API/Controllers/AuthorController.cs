@@ -1,10 +1,12 @@
 ﻿using CQRSMediaTR.API.Data.Command.Authors;
 using CQRSMediaTR.API.Data.Query.Authors;
 using CQRSMediaTR.API.Models;
+using CQRSMediaTR.API.Models.Dto;
 using CQRSMediaTR.API.Response;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
+using System.Net.Mime;
 
 namespace CQRSMediaTR.API.Controllers
 {
@@ -29,6 +31,7 @@ namespace CQRSMediaTR.API.Controllers
 
         [HttpGet]
         [Route("AllAuthor")]
+        [Produces(MediaTypeNames.Application.Json, MediaTypeNames.Application.Xml)]
         public async Task<IActionResult> GetAllAuthor()
         {
             _logger.LogInformation("AuthorMaster: GetAll Started.");
@@ -63,7 +66,7 @@ namespace CQRSMediaTR.API.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById([FromRoute] int id)
         {
             _logger.LogInformation("AuthorMaster: GetById Started.");
 
@@ -95,7 +98,7 @@ namespace CQRSMediaTR.API.Controllers
 
         [HttpPost]
         [Route("POST")]
-        public async Task<IActionResult> AddAuthor([FromBody] Author author)
+        public async Task<IActionResult> AddAuthor([FromBody] AddAuthorRequestDto author)
         {
             _logger.LogInformation("AuthorMaster: CreateAuthor Started.");
 
@@ -152,7 +155,7 @@ namespace CQRSMediaTR.API.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
-        public async Task<IActionResult> DeleteAuthor(int id)
+        public async Task<IActionResult> DeleteAuthor([FromRoute] int id)
         {
             _logger.LogInformation("AuthorMaster: DeleteAuthor Started.");
 
