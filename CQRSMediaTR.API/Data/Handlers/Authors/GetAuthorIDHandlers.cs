@@ -5,18 +5,20 @@ using MediatR;
 
 namespace CQRSMediaTR.API.Data.Handlers.Authors
 {
-    public class GetAuthorHandlers : IRequestHandler<GetAuthorByIdQuery, Author>
+    public class GetAuthorIDHandlers : IRequestHandler<GetAuthorByIdQuery, Author>
     {
         private readonly IAuthorRepository _repository;
 
-        public GetAuthorHandlers(IAuthorRepository repository)
+        public GetAuthorIDHandlers(IAuthorRepository repository)
         {
             _repository = repository;
         }
         public async Task<Author> Handle(GetAuthorByIdQuery request, CancellationToken cancellationToken)
         {
             var isExists =  _repository.GetAuthorByIdAsync(request.AuthorId);
+
             if (isExists == null) { return default; }
+
             return await isExists;
         }
     }

@@ -21,7 +21,7 @@ namespace CQRSMediaTR.API.Services
 
         public async Task<int> DeleteAuthorAsync(int id)
         {
-            var result = await _context.Authors.FirstOrDefaultAsync(x => x.AuthorId == id);
+            var result = await _context.Authors.AsNoTracking().FirstOrDefaultAsync(x => x.AuthorId == id);
             if (result == null)
             {
                 return 0;
@@ -33,14 +33,14 @@ namespace CQRSMediaTR.API.Services
 
         public async Task<Author> GetAuthorByIdAsync(int id)
         {
-            var result = await _context.Authors.FirstOrDefaultAsync(x => x.AuthorId == id);
+            var result = await _context.Authors.AsNoTracking().FirstOrDefaultAsync(x => x.AuthorId == id);
             if (result is null) return null;
             return result;
         }
 
         public async Task<List<Author>> GetAuthorListAsync()
         {
-            var result = await _context.Authors.ToListAsync();
+            var result = await _context.Authors.AsNoTracking().ToListAsync();
             return result;
         }
 

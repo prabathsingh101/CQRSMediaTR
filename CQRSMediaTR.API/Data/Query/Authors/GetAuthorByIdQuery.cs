@@ -3,7 +3,7 @@ using MediatR;
 
 namespace CQRSMediaTR.API.Data.Query.Authors
 {
-    public class GetAuthorByIdQuery: IRequest<Author>
+    public class GetAuthorByIdQuery : IRequest<Author>
     {
         public int AuthorId { get; set; }
     }

@@ -15,6 +15,7 @@ namespace CQRSMediaTR.API.Data.Handlers.Authors
         public async Task<int> Handle(DeleteAuthorCommand request, CancellationToken cancellationToken)
         {
             var isExists = await _repository.GetAuthorByIdAsync(request.AuthorId);
+            // Check if the author exists
             if (isExists == null)
             {
                 return default;
